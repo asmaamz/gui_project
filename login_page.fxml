@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #D7DF01;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.login_Controller">
+   <children>
+      <BorderPane layoutX="8.0" layoutY="8.0" prefHeight="471.0" prefWidth="345.0" style="-fx-background-color: #020426;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <top>
+            <ImageView fitHeight="75.0" fitWidth="75.0" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Resources/teamwork.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets top="8.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="username" layoutX="95.0" layoutY="30.0" opacity="0.8" promptText="username">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow color="#d7df01" height="47.68" radius="23.3425" width="47.69" />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="password" layoutX="95.0" layoutY="80.0" opacity="0.8" promptText="password">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow color="#d7df01" height="47.68" radius="23.3425" width="47.69" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <RadioButton fx:id="student" layoutX="138.0" layoutY="151.0" mnemonicParsing="false" text="Student" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="teacher" layoutX="136.0" layoutY="184.0" mnemonicParsing="false" text="Teacher" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <Hyperlink layoutX="126.0" layoutY="117.0" text="Forget password" underline="true">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Hyperlink>
+                  <Button fx:id="login" layoutX="95.0" layoutY="253.0" mnemonicParsing="false" onAction="#login" prefHeight="29.0" prefWidth="159.0" style="-fx-background-color: #0B173B;" text="LOG IN" textFill="#d7df01">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Button>
+                  <Label layoutX="110.0" layoutY="236.0" text="select one of the choices" textFill="#db1212" visible="false" />
+                  <Label layoutX="93.0" layoutY="6.0" text="wrong username or password" textFill="#db1212" visible="false" />
+                  <RadioButton fx:id="hod" layoutX="136.0" layoutY="217.0" mnemonicParsing="false" text="Head of Depart" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </RadioButton>
+
+
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

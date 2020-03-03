@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D7DF01;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.view_student_attendance">
+    <children>
+        <BorderPane layoutX="8.0" layoutY="8.0" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #020426;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+            <top>
+                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="97.0" fitWidth="102.0">
+                            <image>
+                                <Image url="@../Resources/student.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </top>
+            <left>
+                <VBox prefHeight="309.0" prefWidth="155.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="courses_list" mnemonicParsing="false" onAction="#load_courses_list" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="Courses List" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                        <Button fx:id="view_my_attendance" mnemonicParsing="false" onAction="#load_view_my_attendance" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="View/Update Attendance" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+
+                        <Button fx:id="view_edit_profile" mnemonicParsing="false" onAction="#load_view_edit_profile" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="View/Edit Profile" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                        <Button fx:id="log_out" mnemonicParsing="false" onAction="#load_log_out" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="Log Out" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                    </children></VBox>
+            </left>
+            <center>
+                <AnchorPane fx:id="home" prefHeight="352.0" prefWidth="529.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ListView fx:id="list" layoutY="-4.0" prefHeight="263.0" prefWidth="429.0" />
+               </children></AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+
+</AnchorPane>

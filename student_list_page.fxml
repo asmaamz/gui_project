@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #D7DF01;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.student_list_page_Controller">
+    <minWidth>-Infinity</minWidth>
+    <minHeight>-Infinity</minHeight>
+    <maxHeight>-Infinity</maxHeight>
+    <children>
+        <BorderPane layoutX="8.0" layoutY="8.0" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #020426;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+            <top>
+                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="97.0" fitWidth="102.0">
+                            <image>
+                                <Image url="@../Resources/teacher.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </top>
+            <left>
+                <VBox prefHeight="309.0" prefWidth="155.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button id="students_list" mnemonicParsing="false" onAction="#load_students_list" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="Students List" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                        <Button id="courses_list" mnemonicParsing="false" onAction="#load_courses_list" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="Courses List" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                        <Button id="mark_attendance" mnemonicParsing="false" onAction="#mark_attendance" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="Mark Attendance " textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                        <Button id="view_update_attendance" mnemonicParsing="false" onAction="#load_view_update_attendance" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="View/Update Attendance" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                        <Button id="attendance_history" mnemonicParsing="false" onAction="#load_attendance_history" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="Attendance History" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+
+                        <Button id="absence_presence_calc" mnemonicParsing="false" onAction="#load_absence_presence_calc" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="Absence/Presence Calc" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                        <Button id="view_edit_profile" mnemonicParsing="false" onAction="#load_view_edit_profile" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="View/Edit Profile" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                        <Button id="log_out" mnemonicParsing="false" onAction="#load_log_out" prefHeight="30.0" prefWidth="187.0" style="-fx-background-color: #0B173B;" text="Log Out" textFill="#d7df01">
+                            <effect>
+                                <Bloom />
+                            </effect>
+                        </Button>
+                    </children></VBox>
+            </left>
+            <center>
+                <AnchorPane id="students_list_anchorpane" prefHeight="352.0" prefWidth="529.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ListView prefHeight="310.0" prefWidth="530.0" />
+               </children></AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+    <maxWidth>-Infinity</maxWidth>
+</AnchorPane>
